@@ -229,6 +229,8 @@ class Worker(utils.EventEmitter[EventTypes]):
         opts.api_key = opts.api_key or os.environ.get("LIVEKIT_API_KEY") or ""
         opts.api_secret = opts.api_secret or os.environ.get("LIVEKIT_API_SECRET") or ""
 
+        # this is a test comment
+
         if not opts.ws_url:
             raise ValueError(
                 "ws_url is required, or add LIVEKIT_URL in your environment"
